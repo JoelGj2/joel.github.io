@@ -1,0 +1,176 @@
+
+* {
+  margin: 0;
+  padding : 0 ;
+  box-sizing :  border-box;
+}
+
+html {
+  scroll-behavior : smooth;
+   font-size:  16px ;
+}
+
+body {
+   font-family :  Arial, Helvetica, sans-serif;
+  background-color :  #f9f9f9;
+  color :  #333;
+  line-height : 1.6;
+}
+
+header {
+  background-color: #30363c;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px   8px rgba(0, 0, 0, 0.1);
+}
+
+header .header {
+  max-width: 1200px;
+  margin: auto;
+   display: flex;
+  justify-content:  space-between;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.text h1 {
+  color: #ffffff;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  margin-left: 2rem;
+  font-size: 1.1rem;
+  transition: color 0.3s;
+  position: relative;
+}
+
+nav a::after {
+  position: absolute;
+  
+  width: 0%;
+  height: 2px;
+  background-color: #ffcc00;
+  transition: width  0.3s ease;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+nav a:hover {
+  color: #ffcc00;
+}
+
+.hero {
+  background: linear-gradient(#4b4e51cc, #4c565acc),
+               url('Vlore.jpg') center/cover no-repeat;
+  color: white;
+  padding: 22rem 0; 
+  text-align: center;
+}
+
+.hero .text { 
+  max-width: 700px;
+  margin: auto;
+} 
+
+.hero h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size:  1.25rem;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  padding: 0.9rem  2.5rem;
+  background-color:  #ffcc00;
+  color: #252b31;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  font-size:  1.1rem;
+}
+
+.btn:hover {
+  background-color: #e6b800;
+  transform:  scale(1.5);
+}
+
+  .section {
+    padding:  5rem 2rem;
+  }
+  
+  .section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color:  #252b31;
+    position: relative;
+  }
+  
+  .section h2::after {
+    content: '';
+    width: 80px;
+    height: 4px;
+    background-color:  #ffcc00;
+    display: block;
+    margin: 0.5rem auto 0;
+    border-radius: 2px;
+  }
+  
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem ;
+    justify-content: center ;
+  }
+ 
+  .places {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow : 0 8px 25px rgba(0,  0, 0, 0.07);
+    overflow: hidden;
+    transition: transform 0.3s , box-shadow 0.3s ;
+    width: 300px;
+  }
+  
+  .places:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+  }
+  
+  .places img {
+    width:  100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .places h3 {
+    font-size: 1.5rem ; 
+    color: #252b31;
+    margin: 1rem;
+  }
+  
+  .places p {
+    padding: 0 1rem  1.5rem;
+    font-size: 1rem;
+    color : #555;
+  }
+
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding : 1.5rem 0;
+    font-size: 1rem;
+  }
